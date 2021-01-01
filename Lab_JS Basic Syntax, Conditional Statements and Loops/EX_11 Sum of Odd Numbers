@@ -1,0 +1,15 @@
+    function solve (num){
+        var count = num;
+        var sum=0;
+        var nums=1;
+        while(count>0){
+            if (nums%2!=0){
+                count--;
+                console.log(nums)
+                sum+=nums;
+            }
+            nums++;
+        }
+        console.log(`Sum: ${sum}`)
+    }
+solve(5)
