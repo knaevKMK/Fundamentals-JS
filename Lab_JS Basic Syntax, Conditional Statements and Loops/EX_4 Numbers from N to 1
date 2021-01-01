@@ -1,0 +1,13 @@
+function solveDev(num){
+for(let i=num; i>0;  i--){
+    console.log(i);
+}
+}
+solveDev(5)
+
+function solveDev1(num){
+while(num>0){
+    console.log(num--);
+}
+}
+solveDev1 (5)
