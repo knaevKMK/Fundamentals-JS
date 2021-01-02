@@ -1,0 +1,16 @@
+function solve(num){
+    let result= true;
+    let divisibles= [10, 7, 6, 3, 2];
+
+    for (let i=0; i< 5; i++){
+        if ( num % divisibles[i]===0){
+            result=false;
+         console.log(`The number is divisible by ${divisibles[i]}`);
+            return;
+        }
+    }
+    if (result){
+        console.log(`Not divisible`);
+    }
+}
+solve(21)
