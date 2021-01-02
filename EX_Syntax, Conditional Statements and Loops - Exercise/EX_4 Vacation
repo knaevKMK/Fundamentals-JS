@@ -1,0 +1,41 @@
+function solve (countOfPeople,typeOfGroup,dayOfWeek){
+let result=0.0;
+switch(typeOfGroup){
+    case "Students": 
+    switch (dayOfWeek){
+        case 'Friday' : result=8.45; break;
+        case 'Saturday' : result=9.80; break;
+        case 'Sunday' : result=10.46; break;
+    }
+    if (countOfPeople >=30){
+        result*=0.85;
+    }
+    break;
+    case "Business": 
+    switch (dayOfWeek){
+        case 'Friday' : result=10.90; break;
+        case 'Saturday' : result=15.60; break;
+        case 'Sunday' : result=16.00; break;
+    }
+     if (countOfPeople >=100){
+       countOfPeople-=10;
+    }
+    break;
+    case "Regular": 
+    switch (dayOfWeek){
+        case 'Friday' : result=15.00; break;
+        case 'Saturday' : result=20.00; break;
+        case 'Sunday' : result=22.50; break;
+    }
+     if (countOfPeople >=10 && countOfPeople<=20){
+       result*=0.95;
+    }
+    break;
+    }
+    result*=countOfPeople;
+console.log(`Total price: ${result.toFixed(2)}`);
+}
+
+solve(30,"Students","Sunday");
+solve(300,"Business","Sunday");
+solve(15,"Regular","Saturday");
