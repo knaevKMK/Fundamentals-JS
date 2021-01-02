@@ -1,0 +1,10 @@
+function solve (num,precision){
+    if (precision >15){
+        precision=15;
+    }
+ let res= +num.toFixed(precision);
+    console.log(res);
+
+}
+solve (10.5,3)
+solve (3.1445362563459274359872,2)
