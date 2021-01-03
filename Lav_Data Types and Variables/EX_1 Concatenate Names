@@ -1,0 +1,5 @@
+function solve (strOne,strEnd,strMiddle){
+    let result = strOne.concat(strMiddle,strEnd);
+    console.log(result);
+} 
+solve ('one','two','+')
