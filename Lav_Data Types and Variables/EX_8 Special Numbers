@@ -1,0 +1,15 @@
+function solve(num){
+    for(let i=1; i<=num; i++){
+        let check = i.toString();
+        let sumCheckDigits=0;
+        for(let j= 0; j< check.length; j++){
+                sumCheckDigits+=Number (check[j]);
+        }
+        let result = 'False';
+        if  (sumCheckDigits%5==0 || sumCheckDigits %7==0 || sumCheckDigits % 11 == 0){
+            result= 'True';
+        }
+        console.log(`${i} -> ${result}`)
+    }
+}
+solve(15);
