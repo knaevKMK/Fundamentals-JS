@@ -1,0 +1,12 @@
+function solve(distance, passangers, pricePerL){
+    // 7l/100km empty
+    //0.1l increment each person
+   
+   let totalFuel= 7 * (distance / 100);
+   totalFuel =totalFuel +  passangers * 0.1;  
+let neededMoney = totalFuel * pricePerL; 
+console.log(`Needed money for that trip is ${neededMoney.toFixed(3)} lv`)
+}
+
+solve(260, 9, 2.49);
+solve(90, 14, 2.88);
