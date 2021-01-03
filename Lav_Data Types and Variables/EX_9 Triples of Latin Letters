@@ -1,0 +1,10 @@
+function solve (num){
+    for (let i= 0; i<=num;i++){
+        for(let j = 0; j<=num; j++){
+           for(let e = 0; e<=num; e++){
+                console.log(String.fromCharCode(97+i,97+j,97+e));
+           }
+        }
+    }
+}
+solve(2);
