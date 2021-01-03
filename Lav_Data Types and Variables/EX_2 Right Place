@@ -1,0 +1,11 @@
+function solve (one,insert,compare){
+    one= one.replace('_',insert);
+    if (one===compare){
+    console.log(`Matched`);
+    } else{
+        console.log(`Not Matched`);
+    }
+    console.log(`${one} ${compare}`);
+}
+solve('Str_ng', 'I', 'Strong')
+solve('Str_ng', 'i', 'String')
