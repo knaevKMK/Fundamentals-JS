@@ -1,0 +1,12 @@
+function solve (num) {
+num = num.toString();
+let sum=0;
+    for(let i=0; i<num.length; i++){
+        sum+= Number(num[i]);
+    }
+    let result = sum.toString().includes('9');
+ let   resultR=result.toString().substring(0,1).toUpperCase() + result.toString().substring(1,);
+    console.log( `${num} Amazing? ${resultR}` )
+}
+solve(1233);
+solve(999);
