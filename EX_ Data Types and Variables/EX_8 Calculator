@@ -1,0 +1,20 @@
+function solve(x,operator,y){
+    let result=0.0;
+    switch(operator){
+        case '+':
+        result= x+y;
+         break;
+        case '-': 
+        result= x-y;
+        break;
+        case '/':
+        result = x/y;
+         break;
+        case '*':
+        result = x*y;
+         break;
+    }
+    console.log(`${result.toFixed(2)}`);
+}
+
+solve(4,'+',2)
