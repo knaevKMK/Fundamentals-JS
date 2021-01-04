@@ -1,0 +1,5 @@
+function solve (a,b,c){
+   c= c.concat(b,a);
+   console.log(c)
+}
+solve('a','b','c')
