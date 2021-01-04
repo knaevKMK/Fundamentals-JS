@@ -1,0 +1,10 @@
+function solve (symbol){
+  
+    if  (symbol.charAt(0)>= 'A'.charAt(0) && symbol.charAt(0)<='Z'.charAt(0)){
+        console.log('upper-case')
+    } else {
+        console.log('lower-case');
+    }
+}
+solve('A');
+solve('z')
