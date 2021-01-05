@@ -1,5 +1,4 @@
 function solve (array1, array2){
- 
     let sum=0;
     let diff=[];
     let index=0;
@@ -10,7 +9,7 @@ function solve (array1, array2){
                 sum+= Number(array1[i]);
         }else{
             diff[index++]= i;
-    
+             break;
         }
     }
 
