@@ -12,7 +12,6 @@ function solve(temp) {
     let end = temp.slice(0, indexReverce);
     temp = temp.slice(indexReverce, temp.length).concat(end);
     console.log(temp.toString().replace(/,/g, ' '));
-
 }
 
 solve(['1', '2', '3', '4', '2']);
