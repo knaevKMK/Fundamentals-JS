@@ -1,4 +1,4 @@
-function solve(input) {
+function main(input) {
     let array = input[0].split(' ');
 
     for (let index = 1; index < input.length; index++) {
@@ -20,7 +20,7 @@ function solve(input) {
     }
     console.log(array.join(' '));
 }
-solve(['4 19 2 53 6 43',
+main(['4 19 2 53 6 43',
     'Add 3',
     'Remove 2',
     'RemoveAt 1',
