@@ -7,10 +7,9 @@ function main(num) {
     } else {
         let pr = '%';
         let dot = '.';
-        console.log(`${num}%[${pr.repeat(count)}${dot.repeat(10 - count)}]`);
+        console.log(`${num}% [${pr.repeat(count)}${dot.repeat(10 - count)}]`);
         console.log(`Still loading...`);
     }
-
 }
 main(30);
 main(50);
