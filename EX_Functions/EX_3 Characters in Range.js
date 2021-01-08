@@ -7,8 +7,6 @@ function main (first,second){
     }
     let end = getBigger(first,second);
     let start = getSmaller(first,second);
-    console.log (start);
-    console.log(end);
     let result = '';
     for (let index = start+1; index < end; index++) {
       result += String.fromCharCode(index)+' ';        
