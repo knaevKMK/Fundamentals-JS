@@ -15,7 +15,7 @@ function solve(array1, array2) {
         let price = parseFloat(array2.shift());
 
         let product = store.filter(prod => prod['name'] == name);
-    
+
 
         if (!product.length) {
             store.push(product = { name, price });
@@ -27,9 +27,6 @@ function solve(array1, array2) {
             })
                 ;
         }
-
-
-
     }
 
     store.forEach(product => console.log(`${product['name']} -> ${product['price']}`));
